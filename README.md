@@ -26,6 +26,7 @@ Hooli Drive requires the following dependencies to be installed on the VM.
 * Redis C library `sudo apt-get install libhiredis-dev`
 
 ### Running Client
+Note that before executing the client, HMDS and HFTPD must be running and awaiting communication from the client.
 Within the *client* folder, run `make`.
 
 The client accepts 6 optional parameters followed by 2 required ones:
