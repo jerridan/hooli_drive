@@ -1,7 +1,7 @@
 # Hooli Drive
 A client-server file transfer system built in C
 
-Hooli Drive was a networking assignment given by Jeff Shantz at the University of Western Ontario, which I completed successfully with an overall grade of 102.5%.
+Hooli Drive was a networking assignment given by Jeff Shantz at the University of Western Ontario.
 
 Note: This should not be considered ready for production. However, it may be used by someone trying to solve a similar problem, or as a reference for setting up file transfer over TCP and reliable UDP connections.
 
