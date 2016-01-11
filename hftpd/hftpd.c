@@ -152,11 +152,11 @@ void handleUploads(hftp_control_message* controlRequest,
     }
     FILE *fp = handleInitialization(expSequence, sockfd, client, db_hostname, 
       root_dir, controlRequest, &username, &file_size, init_count);
-    free(controlRequest);
-
+    
     // If a file pointer is not created, initialization failed
     if(NULL == fp) {
       syslog(LOG_ERR, " * File could not be created");
+      free(controlRequest);
       return;
     }
 
@@ -240,6 +240,8 @@ void handleUploads(hftp_control_message* controlRequest,
       updateDatabaseEntry(controlRequest, username, db_hostname);
       file_count++;
     }
+
+    free(controlRequest);
 
     // Log progress
     double percent_complete = (double)bytes_received/file_size*100;

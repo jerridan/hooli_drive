@@ -40,7 +40,7 @@ int requestList(int sockfd, char* token, hooli_file* file) {
   char* thdr = createHeader("Token", token);         // Token header
   char* b_length;                                    // Body length
   // -1 to account for newline after headers
-  asprintf(&b_length, "%d", strlen(body) - 1);
+  asprintf(&b_length, "%zu", strlen(body) - 1);
   // Body length header
   char* lhdr = createHeader("Length", b_length);
   // Note that extra '\n' after headers added by body
@@ -108,7 +108,7 @@ int respond302(int sockfd, char* req_uploads) {
   char* msg;                                      // Message to be sent
   char* status = "302 Files requested\n";         // Status
   char* b_length;                                 // Length of body
-  asprintf(&b_length, "%d", strlen(req_uploads));
+  asprintf(&b_length, "%zu", strlen(req_uploads));
   char* lhdr = createHeader("Length", b_length);  // Length header
   asprintf(&msg, "%s%s\n%s", status, lhdr, req_uploads);
   // Send response
