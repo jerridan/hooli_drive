@@ -1,4 +1,4 @@
-# hooli_drive
+# Hooli Drive
 A client-server file transfer system built in C
 
 Hooli Drive was a networking assignment given by Jeff Shantz at the University of Western Ontario, which I completed successfully with an overall grade of 102.5%.
