@@ -1,0 +1,17 @@
+//Unwanted C files
+*.o
+*.a
+*.class
+
+//Executables
+client/client
+hdb/testlibhdb
+hmds/hmds
+hftpd/hftpd
+
+//Test data
+*/test/*
+
+//Other
+.DS_Store
+.vagrant
