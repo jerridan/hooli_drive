@@ -111,4 +111,4 @@ or:
 ## Further documentation
 The original documentation outlining the requirements and functionality of this assignment in depth can be found within the wiki. Note that the assignment was broken up into 3 separate parts.
 
-If you are interested in the evaluations and feedback I received for this assignment, you will find them in the *evaluations* folder. Note that for assignment 2, a late penalty of -16% was incorrectly assigned, and was later changed to -4%.
+If you are interested in the evaluations and feedback I received for this assignment, you will find them in the *evaluations* folder.
